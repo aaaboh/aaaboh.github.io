@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+  BIFRONTE — Pagina "Chi Siamo"
+  Questa pagina è basata sul file generic.html del template Phantom.
+  Tecnica: copia di generic.html rinominata e con contenuto personalizzato.
+  (Sezione 7.5 della guida: aggiungere nuove pagine)
+-->
+<html>
+  <head>
+    <!-- Titolo specifico di questa pagina -->
+    <title>Chi Siamo — BIFRONTE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Stessi fogli di stile dell'index: il percorso "assets/css/" funziona perché
+         questo file è nella stessa cartella radice di index.html -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- HEADER: identico a index.html per coerenza visiva -->
+      <header id="header">
+        <div class="inner">
+          <a href="index.html" class="logo">
+            <span class="symbol"><img src="images/logo.svg" alt="Logo BIFRONTE" /></span>
+            <span class="title">BIFRONTE</span>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="#menu">Menu</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- MENU LATERALE: identico a index.html -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articolo.html">Leggi un Dibattito</a></li>
+          <!-- La voce "Chi Siamo" è evidenziata perché siamo su questa pagina -->
+          <li><a href="about.html"><strong>Chi Siamo</strong></a></li>
+          <li><a href="#">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <!-- MAIN: contenuto principale della pagina Chi Siamo -->
+      <div id="main">
+        <div class="inner">
+
+          <!-- Titolo della pagina -->
+          <h1>Chi Siamo</h1>
+
+          <!-- Immagine principale della pagina (classe "image main" = larghezza intera) -->
+          <!-- pic13.jpg è un'immagine inclusa nel template Phantom -->
+          <span class="image main">
+            <img src="images/pic13.jpg" alt="Immagine rappresentativa del progetto BIFRONTE" />
+          </span>
+
+          <!-- TESTO: descrizione del progetto e della sua filosofia -->
+          <!-- Ogni <p> è un paragrafo separato in HTML -->
+
+          <p>
+            <strong>BIFRONTE</strong> è un progetto che nasce da una domanda semplice:
+            perché continuiamo a leggere solo le notizie che confermano ciò che già pensiamo?
+            Il termine <em>bifronte</em> richiama Giano, il dio romano con due facce opposte —
+            simbolo di ogni questione che può essere guardata da angolazioni diverse.
+          </p>
+
+          <p>
+            In un'epoca in cui gli algoritmi dei social network ci mostrano quasi esclusivamente
+            contenuti in linea con le nostre opinioni (il cosiddetto <em>filter bubble</em>),
+            BIFRONTE tenta un approccio opposto: <strong>non puoi leggere solo ciò che vuoi
+            sentire</strong>. Ogni dibattito è strutturato in blocchi alternati PRO e CONTRO
+            che si sbloccano progressivamente, obbligando il lettore a confrontarsi con
+            entrambi i punti di vista.
+          </p>
+
+          <!-- Sottotitolo per la sezione successiva: in HTML si usa h2 per i titoli di secondo livello -->
+          <h2>Il Meccanismo</h2>
+
+          <p>
+            Il funzionamento di BIFRONTE si articola in tre fasi. Prima di tutto, la lettura
+            a ping-pong: i testi PRO e CONTRO sono divisi in blocchi che si sbloccano
+            alternativamente. Non si può passare al blocco successivo dello stesso lato
+            senza aver prima letto il blocco corrispondente dell'altro. Questo costringe
+            gli occhi a saltare continuamente da una prospettiva all'altra.
+          </p>
+
+          <p>
+            In secondo luogo, un timer di permanenza: il sistema registra per quanto tempo
+            ogni blocco rimane visibile sullo schermo. Se scorri troppo velocemente, il
+            blocco non viene marcato come "letto" e non si sblocca quello successivo.
+            Il tempo minimo è calibrato sulla lunghezza del testo, simulando una lettura
+            media di 200 parole al minuto.
+          </p>
+
+          <p>
+            Infine, un checkpoint di comprensione: al termine dell'articolo, un breve quiz
+            interattivo con trascinamento (<em>drag and drop</em>) verifica che il lettore
+            abbia effettivamente compreso i punti chiave di entrambe le posizioni.
+            Solo superando il quiz si sblocca la sezione commenti.
+          </p>
+
+          <h2>Il Progetto</h2>
+
+          <p>
+            BIFRONTE è stato realizzato come progetto di esame per il corso di tecnologie
+            web, utilizzando HTML5, CSS3 e JavaScript vanilla (senza framework esterni).
+            Il layout della homepage è basato sul template Phantom di
+            <a href="https://html5up.net">HTML5 UP</a>, distribuito con licenza CCA 3.0.
+            La pagina articolo è stata sviluppata interamente da zero.
+          </p>
+
+        </div>
+      </div>
+      <!-- Fine MAIN -->
+
+      <!-- FOOTER: identico a index.html -->
+      <footer id="footer">
+        <div class="inner">
+          <section>
+            <h2>Scrivici</h2>
+            <form method="post" action="#">
+              <div class="fields">
+                <div class="field half">
+                  <input type="text" name="name" id="name" placeholder="Nome" />
+                </div>
+                <div class="field half">
+                  <input type="email" name="email" id="email" placeholder="Email" />
+                </div>
+                <div class="field">
+                  <textarea name="message" id="message" placeholder="Messaggio"></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li><input type="submit" value="Invia" class="primary" /></li>
+              </ul>
+            </form>
+          </section>
+          <section>
+            <h2>Seguici</h2>
+            <ul class="icons">
+              <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+              <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+          </section>
+          <ul class="copyright">
+            <li>&copy; BIFRONTE 2026. Tutti i diritti riservati.</li>
+            <li>Design base: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
+    <!-- Fine WRAPPER -->
+
+    <!-- Script del template (necessari per il menu laterale e le animazioni) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- JavaScript personalizzato: stessa funzione di index.html
+         per coerenza tra le pagine del sito -->
+    <script>
+      // La stessa funzione mostraSpiegazione() è disponibile su tutte le pagine
+      // così l'utente può sempre scoprire come funziona il sito
+      function mostraSpiegazione() {
+        alert(
+          "Come funziona BIFRONTE:\n\n" +
+          "1. Scegli un dibattito dalla homepage\n" +
+          "2. Leggi il primo blocco PRO\n" +
+          "3. Il blocco CONTRO si sblocca automaticamente\n" +
+          "4. Continua alternando PRO e CONTRO\n" +
+          "5. Completa il quiz finale di comprensione\n\n" +
+          "Solo dopo aver letto entrambi i lati potrai lasciare un commento!"
+        );
+      }
+    </script>
+
+  </body>
+</html>
